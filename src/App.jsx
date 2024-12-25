@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ThemeContextProvider } from './context/ThemeContext'
+import ThemeBtn from './component/ThemeBtn';
+import Card from './component/Card';
 
 function App() {
   const htmlElem = document.querySelector("html");
@@ -20,11 +22,11 @@ function App() {
       <div className="flex flex-wrap min-h-screen items-center">
                 <div className="w-full">
                     <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
-                        {/* Button component*/}
+                        <ThemeBtn />
                     </div>
 
                     <div className="w-full max-w-sm mx-auto">
-                        {/* Card component*/}
+                        <Card />
                     </div>
                 </div>
             </div>
